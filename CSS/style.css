@@ -1,7 +1,35 @@
-.main {
+:root {
+  font-family: Verdana, sans-serif;
 }
 
-/*Navigation Bar*/
+body {
+  margin: 0;
+}
+
+hr.dotted {
+  border-top: 1px dotted #67a3d7;
+}
+
+hr.dashed {
+  border-top: 1px dashed #67a3d7;
+}
+
+h1 {
+  font-size: xxx-large;
+}
+
+h2 {
+  font-size: xx-large;
+  color: #274b7e;
+}
+
+h3 {
+  font-size: x-large;
+}
+p {
+  line-height: 1.6;
+}
+/* Navigation Bar */
 .navbar {
   background-color: #d0e5f2;
   overflow: hidden;
@@ -20,7 +48,6 @@
   padding: 14px 16px;
   font-size: 16px;
   text-align: center;
-  font-family: Verdana, sans-serif;
   text-decoration: none;
 }
 
@@ -33,7 +60,6 @@
   padding: 14px 16px;
   font-size: 16px;
   text-align: center;
-  font-family: Verdana, sans-serif;
   text-decoration: none;
 }
 
@@ -46,11 +72,49 @@
   font-size: 16px;
   font-weight: 900;
   text-align: center;
-  font-family: Verdana, sans-serif;
   text-decoration: none;
 }
 
 .navbar .btn-group .button:hover {
   background-color: #67a3d7;
   color: #d0e5f2;
+}
+
+/* Main-Left */
+.main-left {
+  padding-top: 80px;
+  padding-left: 70px;
+  float: left;
+  width: 30%;
+  margin: 20px;
+}
+
+.main-left .profile-img {
+  border-radius: 100%;
+}
+
+/* Main-right */
+.main-right {
+  padding-top: 80px;
+  padding-right: 70px;
+  float: right;
+  width: 50%;
+  margin: 20px;
+}
+
+/* Main */
+.main {
+  padding-top: 80px;
+  padding-right: 80px;
+  padding-left: 80px;
+  margin: 20px;
+}
+
+.main .main-img {
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
 }
