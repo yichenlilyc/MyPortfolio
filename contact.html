@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yichen Li</title>
+    <link rel="icon" type="image/x-icon" href="Images/YichenLI_PNG.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <div class="btn-group">
+            <img src="Images/YichenLI_PNG.png" height="35px" style="float:left; margin-left: 15px; align-items: center;padding:5px 10px;">
+            <a href="index.html">Yichen Li's Personal Website</a>
+            <button class="cur-button" onclick="window.location='contact.html';"> Contact</button>
+            <button class="button" onclick="window.location='project.html';"> Projects</button>
+            <button class="button" onclick="window.location='about.html';"> About</button>
+        </div>
+     
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <h2>Leave me a message: </h2>
+        <div class="contactForm">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name ...">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your email ...">
+                <label for="msg">Message:</label>
+                <textarea id="msg" placeholder="Leave me a message..."></textarea>
+                <input type="submit" id="submit" value="Submit">
+
+            </form>
+        
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    document.getElementById("submit"). onclick=function(){OnSubmit()};
+    function OnSubmit(){
+        if(document.getElementById("name").value.length == 0)
+        {
+            alert("Please input your name.")
+        }
+        else if(document.getElementById("email").value.length == 0)
+        {
+            alert("Please input your email.")
+        }
+        else if(document.getElementById("msg").value.length == 0)
+        {
+            alert("Please input your message.")
+        }
+        else
+        {
+            alert("Sorry! This function is not ready yet...")
+        }
+    }
+    
+</script>
+
+</html>
